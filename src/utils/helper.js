@@ -1,12 +1,8 @@
+//I keep the function here for the sake of running tests.
+
 export const onCheckWinner = (table, round) => {
     const diagonals = checkDiagonals(table, round);
     const winer = checkVerticalsAndHorizontals(table, round);
-
-    console.log('====================================');
-    console.log("table", table, round);
-    console.log('====================================');
-
-    console.log("winer========>", winer, diagonals);
 
     if (diagonals !== -1) {
         return diagonals;
